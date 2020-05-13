@@ -16,7 +16,7 @@ username_regex  = re.compile("^[a-z]+\.[a-z]+$")
 domain_regex    = re.compile("^[a-zA-Z0-9u00a1-\uffff0-]{2,}\.[a-zA-Z0-9u00a1-\uffff0-]{2,}(\S*)$")
 
 source_user     = input_value("User login (format: firstname.lastname): ", username_regex)
-source_domain   = input_value("User domain [example.com]: ", domain_regex, "helpling.com")
+source_domain   = input_value("User domain [example.com]: ", domain_regex, "example.com")
 redirect_user   = input_value("Redirect user login (format: firstname.lastname): ", username_regex)
 redirect_domain = input_value("Redirect user domain [" + source_domain + "]: ", domain_regex, source_domain)
 
