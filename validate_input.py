@@ -1,3 +1,4 @@
+#!/usr/bin/python2.7
 import re
 
 def input_value(prompt, regex, default = None):
