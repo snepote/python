@@ -1,9 +1,9 @@
-#!/usr/bin/python2.7
+#!/usr/bin/python3
 import re
 
 def input_value(prompt, regex, default = None):
     while True:
-        value = raw_input(prompt)
+        value = input(prompt)
         if not value and not default is None:
             value = default
         if not regex.match(value):
@@ -24,7 +24,7 @@ redirect_domain = input_value("Redirect user domain [%s]: " %(source_domain), do
 print("We will redirect <%s@%s> to <%s@%s>" %(source_user, source_domain, redirect_user, redirect_domain))
 
 while True:
-    proceed = raw_input("Proceed (y/n)? ")
+    proceed = input("Proceed (y/n)? ")
     if proceed == "y":
         print("We proceed")
         break
