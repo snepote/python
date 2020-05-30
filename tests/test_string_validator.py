@@ -1,7 +1,5 @@
-import string_validator
+import validate_string
 import pytest
-
-validate_string = string_validator
 
 def test_valid_user():
     assert validate_string.is_username("user.name")
